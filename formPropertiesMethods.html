@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <select id="genres">
+        <option value="rock">Rock</option>
+        <option value="blues" selected>Blues</option>
+    </select>
+
+    <script>
+        // 1. show the value and the text of the selected option
+        alert(genres.value);
+
+        // 2. add an option: <option value="classic">Classic</option>
+        let option = new Option("Classic", "classic", true, true);
+
+        genres.options[2] = option;
+
+        // 3. make it selected
+        // *refer to no. 2 above
+    </script>
+</body>
+
+</html>
